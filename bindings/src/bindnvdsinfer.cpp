@@ -153,6 +153,7 @@ namespace pydeepstream {
                 .def_readwrite("height", &NvDsInferObjectDetectionInfo::height)
                 .def_readwrite("detectionConfidence",
                                &NvDsInferObjectDetectionInfo::detectionConfidence)
+                .def_readwrite("classProb", &NvDsInferObjectDetectionInfo::classProb)
 
                 .def("cast",
                      [](void *data) {
